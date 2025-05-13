@@ -1,34 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Founders Collective Link</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      font-family: Arial, sans-serif;
-      background-color: #fff;
-    }
-    a {
-      font-size: 1.5em;
-      color: #0073e6;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <title>Referral Redirect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-  <a href="https://prisriva.github.io/founders_collective/" target="_blank">
-    https://prisriva.github.io/founders_collective/
-  </a>
-  <a href="  https://prisriva.github.io/founders_collective/?utm_source=Website&utm_medium=other+websites&utm_campaign=referral+test&utm_id=referraltraffic" target="_blank">
-    https://prisriva.github.io/founders_collective/
+  <h1>Referral Page</h1>
+  <p>Click below to visit the Bay Founders Collective:</p>
+
+  <!-- ✅ No 'noreferrer' – will send referrer -->
+  <a href="https://prisriva.github.io/founders_collective/?utm_source=refpage&utm_medium=referral&utm_campaign=test"
+     style="font-size: 1.5em; font-weight: bold; color: blue;">
+    Visit Founders Collective
   </a>
 
+  <!-- Optional: Auto-redirect after a few seconds -->
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://prisriva.github.io/founders_collective/?utm_source=refpage&utm_medium=referral&utm_campaign=test";
+    }, 8000); // delay 8 seconds to allow referrer to register
+  </script>
 </body>
 </html>
